@@ -1,0 +1,125 @@
+.zone-container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.card {
+    width: 20%;
+}
+
+.card .list-group {
+    flex-direction: column;
+}
+
+.zone-view {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.zone-view .zone-grid {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: auto;
+    gap: 10px;
+}
+
+.zone-view .zone-grid img {
+    width: 350px;
+    border-radius: 10px;
+    /* mix-blend-mode: color-burn; */
+    background: grey;
+    border: 2px solid black;
+}
+
+.zone-view .zone-grid .cam {
+    position: relative;
+}
+
+.zone-view .zone-grid .cam-angle {
+    position: absolute;
+    color: white !important;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    color: white;
+    background: #00000087;
+    padding: 2px 4px;
+    border-radius: 6px;
+}
+
+.zone-det .left {
+    color: black;
+}
+
+@media screen and (max-width: 1108px) {
+    .zone-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .card .list-group {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .list-group-flush>.list-group-item {
+        border-width: 0 1px 1px;
+        flex-basis: calc(100% / 3);
+    }
+}
+
+@media screen and (max-width: 982px) {
+
+    .zone-view {
+        width: 100%;
+    }
+
+    .zone-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .zone-grid>.cam>img {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    .zone-container {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 90vw;
+    }
+
+    .card .list-group {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .list-group-flush>.list-group-item {
+        border-width: 0 1px 1px;
+        flex-basis: calc(100% / 3);
+    }
+
+    .zone-view {
+        align-items: center;
+    }
+
+    .zone-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .zone-grid>.cam>img {
+        width: 80vw;
+    }
+}
