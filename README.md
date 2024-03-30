@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, We are Team Vision Vigil</h1>
-<h3 align="center">We are working for Problem Statement : **Lack of video analysis, event detection and automatic alerts to police authorities upon detecting suspicious activities**</h3>
+<h3 align="center">We are working for Problem Statement : **Lack of video analysis, event detection and automatic alerts to admin authorities upon detecting suspicious activities**</h3>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=visionvigil&label=Profile%20views&color=0e75b6&style=flat" alt="visionvigil" /> </p>
 
